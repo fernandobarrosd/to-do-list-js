@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    
+    margin-top: 40px;
+}
+
+
+.to-do-list-container {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 30px;
+    width: 500px;
+    align-items: center;
+    border-radius: 4px;
+    background-color: white;
+    
+}
+
+.to-do-list-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.to-do-list-body-input > input[type=text] {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.to-do-list-body-input > input[type=button] {
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.to-do-list-body-inputs {
+    display: flex;
+    gap: 8px;
+    padding: 5px;
+}
+
+.to-do-list-lista {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    height: max-content;
+    
+    
+}
+
+.to-do-list-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+.to-do-list-item-text {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button {
+    background-color: gray;
+    padding: 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.to-do-list-actions {
+    display: flex;
+}
+
+.to-do-list-action {
+    margin-left: 10px;
+}
+
+.marcado {
+    text-decoration: line-through;
+    background-color: green;
+}
+
