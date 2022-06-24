@@ -3,6 +3,7 @@ const btnAdd = document.querySelector("input[type=button]");
 const inputText = document.querySelector("input[type=text]");
 let text = "";
 const itens = new Array();
+let i = 0;
 
 
 function createListItem(listText) {
@@ -55,12 +56,17 @@ function validateInput() {
     }
 }
 
+
+
 function adicionarItem() {
     if (validateInput()) {
-        const item = createListItem(text);
+        i ++;
+        let msgItem =  `${i} - ${text}`;
+        const item = createListItem(msgItem);
         toDoList.appendChild(item);
         const itens = toDoList.querySelectorAll
         (".to-do-list-item");
+        
 
         itens.forEach(item => {
             const btnRemover = item.querySelector
@@ -87,6 +93,3 @@ window.addEventListener("keypress", ({key}) => {
         adicionarItem();
     }
 })
-
-
-
