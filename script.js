@@ -2,7 +2,6 @@ const toDoList = document.querySelector(".to-do-list-lista");
 const btnAdd = document.querySelector("input[type=button]");
 const inputText = document.querySelector("input[type=text]");
 let text = "";
-const itens = new Array();
 let i = 0;
 
 
@@ -23,7 +22,7 @@ function createListItem(listText) {
     listItemAction.classList.add("to-do-list-action");
 
 
-    /* Adicionando os ids */
+    /* Adicionando o id do botão remover */
     listItemBtnRemove.id = "btn-remover";
 
     /* Adicionando os textos dos botões e do paragrafo */
@@ -42,8 +41,8 @@ function createListItem(listText) {
 }
 
 
-inputText.addEventListener("input", (e) => {
-    text = e.target.value;
+inputText.addEventListener("input", ({target}) => {
+    text = target.value;
 })
 
 
@@ -61,7 +60,7 @@ function validateInput() {
 function adicionarItem() {
     if (validateInput()) {
         i ++;
-        let msgItem =  `${i} - ${text}`;
+        let msgItem = `${i} - ${text}`;
         const item = createListItem(msgItem);
         toDoList.appendChild(item);
         const itens = toDoList.querySelectorAll
