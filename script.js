@@ -71,6 +71,7 @@ function adicionarItem() {
             })
         })
         inputText.value = "";
+        text = "";
             
     }
     else {
