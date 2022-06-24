@@ -85,7 +85,7 @@ body {
     overflow-y: hidden;
     overflow-x: auto;
     width: 400px;
-    height: 80px;
+    height: max-content;
 
 }
 
