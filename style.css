@@ -82,6 +82,9 @@ body {
     background-color: gray;
     padding: 15px;
     border-radius: 4px;
+    overflow-x: auto;
+    width: 400px;
+    height: max-content;
 
 }
 
